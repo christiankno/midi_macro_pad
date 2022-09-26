@@ -1,5 +1,8 @@
 #include <Arduino.h>
 
+#define CC_UP 1
+#define CC_DOWN 127
+
 #define	A0	21
 #define	As0	22
 #define	Bb0	22
@@ -266,3 +269,91 @@ const char *noteNames[] PROGMEM = {
 const char *int2Note(uint i){
     return noteNames[i-21];
 }
+
+
+
+// MIDI controller numbers
+#define NO_ACTION                                    0
+#define	CC_ROTATION                                  1
+#define	CC_CROP_UP                                   2
+#define	CC_CROP_DOWN                                 3
+#define	CC_CROP_LEFT                                 4
+#define	CC_CROP_RIGHT                                5
+#define	CC_NEG_SCAN_BIAS                             6
+#define	CC_NEG_DMAX                                  7
+#define	CC_NEG_SHADOW_RED_OFFSET                     8
+#define	CC_NEG_SHADOW_GREEN_OFFSET                   9
+#define	CC_NEG_SHADOW_BLUE_OFFSET                    10
+#define	CC_NEG_HIGHLIGHTS_RED_OFFSET                 11
+#define	CC_NEG_HIGHLIGHTS_GREEN_OFFSET               12
+#define	CC_NEG_HIGHLIGHTS_BLUE_OFFSET                13
+#define	CC_COLOR_CORRECTION_WHITE_V                  14
+#define	CC_COLOR_CORRECTION_WHITE_H                  15
+#define	CC_COLOR_CORRECTION_BLACK_V                  16
+#define	CC_COLOR_CORRECTION_BLACK_H                  17
+#define	CC_COLOR_BALANCE_CONTRAST                    18
+#define	CC_COLOR_BALANCE_SHADOWS_FACTOR              18
+#define	CC_COLOR_BALANCE_SHADOWS_HUE                 19
+#define	CC_COLOR_BALANCE_SHADOWS_SATURATION          20
+#define	CC_COLOR_BALANCE_MIDS_FACTOR                 21
+#define	CC_COLOR_BALANCE_MIDS_HUE                    22
+#define	CC_COLOR_BALANCE_MIDS_SATURATION             23
+#define	CC_COLOR_BALANCE_HIGHLIGHTS_FACTOR           24
+#define	CC_COLOR_BALANCE_HIGHLIGHTS_HUE              25
+#define	CC_COLOR_BALANCE_HIGHLIGTHS_SATURATION       26
+
+// MIDI note numbers
+#define NOTE_ROTATE_L         1
+#define NOTE_ROTATE_R         2
+#define NOTE_LIGHTTABLE       3
+#define NOTE_DARKROOM         4
+#define NOTE_PREVIOUS         5
+#define NOTE_NEXT             6
+
+// input type
+#define IS_ENCODER 1
+#define IS_BUTTON  0
+
+
+const char* ccDict[]={
+        "NO_ACTION",                                    //0
+        "CC_ROTATION",                                  //1
+        "CC_CROP_UP",                                   //2
+        "CC_CROP_DOWN",                                 //3
+        "CC_CROP_LEFT",                                 //4
+        "CC_CROP_RIGHT",                                //5
+        "CC_NEG_SCAN_BIAS",                             //6
+        "CC_NEG_DMAX",                                  //7
+        "CC_NEG_SHADOW_RED_OFFSET",                     //8
+        "CC_NEG_SHADOW_GREEN_OFFSET",                   //9
+        "CC_NEG_SHADOW_BLUE_OFFSET",                    //10
+        "CC_NEG_HIGHLIGHTS_RED_OFFSET",                 //11
+        "CC_NEG_HIGHLIGHTS_GREEN_OFFSET",               //12
+        "CC_NEG_HIGHLIGHTS_BLUE_OFFSET",                //13
+        "CC_COLOR_CORRECTION_WHITE_V",                  //14
+        "CC_COLOR_CORRECTION_WHITE_H",                  //15
+        "CC_COLOR_CORRECTION_BLACK_V",                  //16
+        "CC_COLOR_CORRECTION_BLACK_H",                  //17
+        "CC_COLOR_BALANCE_CONTRAST",                    //18
+        "CC_COLOR_BALANCE_SHADOWS_FACTOR",              //18
+        "CC_COLOR_BALANCE_SHADOWS_HUE",                 //19
+        "CC_COLOR_BALANCE_SHADOWS_SATURATION",          //20
+        "CC_COLOR_BALANCE_MIDS_FACTOR",                 //21
+        "CC_COLOR_BALANCE_MIDS_HUE",                    //22
+        "CC_COLOR_BALANCE_MIDS_SATURATION",             //23
+        "CC_COLOR_BALANCE_HIGHLIGHTS_FACTOR",           //24
+        "CC_COLOR_BALANCE_HIGHLIGHTS_HUE",              //25
+        "CC_COLOR_BALANCE_HIGHLIGTHS_SATURATION",       //26
+};
+
+
+// MIDI note numbers
+const char* noteDict[]={
+        "NO_ACTION",             //0
+        "NOTE_ROTATE_L",         //1
+        "NOTE_ROTATE_R",         //2
+        "NOTE_LIGHTTABLE",       //3
+        "NOTE_DARKROOM",         //4
+        "NOTE_PREVIOUS",         //5
+        "NOTE_NEXT",             //6
+};

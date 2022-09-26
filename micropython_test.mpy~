@@ -1,0 +1,41 @@
+from machine import Pin, ADC, SoftI2C
+from time import sleep
+
+
+
+outp = Pin(12)
+sda=Pin(0)
+scl=Pin(4)
+
+i2c = SoftI2C(scl=scl,sda=sda)
+
+out=ADC(outp)
+out.atten(ADC.ATTN_11DB)
+
+def read_out():
+    print(out.read())
+    sleep(0.5)
+    
+    
+print("I2C:")
+i2c.scan()
+
+address=54
+reg_angle= [0x0e,2]
+reg_status = [0x0b,1]
+reg_mag = [0x1b,2]
+
+
+def get_angle():
+    angle =int.from_bytes(i2c.readfrom_mem(address, *reg_angle),"big")*360.0/4094
+    magnitude = int.from_bytes(i2c.readfrom_mem(address, *reg_mag),"big")
+    print(f'{angle:4.0f}\t{magnitude}')
+    #print(angle)
+    
+    
+def angmag():
+    while True:
+        get_angle()
+        sleep(0.1)
+    
+   
