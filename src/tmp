@@ -1,0 +1,38 @@
+        NOTES
+        "NO_ACTION",             //0
+        "NOTE_ROTATE_L",         //1
+        "NOTE_ROTATE_R",         //2
+        "NOTE_LIGHTTABLE",       //3
+        "NOTE_DARKROOM",         //4
+        "NOTE_PREVIOUS",         //5
+        "NOTE_NEXT",             //6
+        
+        
+        "NO_ACTION",                                    //0
+        "CC_ROTATION",                                  //1
+        "CC_CROP_UP",                                   //2
+        "CC_CROP_DOWN",                                 //3
+        "CC_CROP_LEFT",                                 //4
+        "CC_CROP_RIGHT",                                //5
+        "CC_NEG_SCAN_BIAS",                             //6
+        "CC_NEG_DMAX",                                  //7
+        "CC_NEG_SHADOW_RED_OFFSET",                     //8
+        "CC_NEG_SHADOW_GREEN_OFFSET",                   //9
+        "CC_NEG_SHADOW_BLUE_OFFSET",                    //10
+        "CC_NEG_HIGHLIGHTS_RED_OFFSET",                 //11
+        "CC_NEG_HIGHLIGHTS_GREEN_OFFSET",               //12
+        "CC_NEG_HIGHLIGHTS_BLUE_OFFSET",                //13
+        "CC_COLOR_CORRECTION_WHITE_V",                  //14
+        "CC_COLOR_CORRECTION_WHITE_H",                  //15
+        "CC_COLOR_CORRECTION_BLACK_V",                  //16
+        "CC_COLOR_CORRECTION_BLACK_H",                  //17
+        "CC_COLOR_BALANCE_CONTRAST",                    //18
+        "CC_COLOR_BALANCE_SHADOWS_FACTOR",              //18
+        "CC_COLOR_BALANCE_SHADOWS_HUE",                 //19
+        "CC_COLOR_BALANCE_SHADOWS_SATURATION",          //20
+        "CC_COLOR_BALANCE_MIDS_FACTOR",                 //21
+        "CC_COLOR_BALANCE_MIDS_HUE",                    //22
+        "CC_COLOR_BALANCE_MIDS_SATURATION",             //23
+        "CC_COLOR_BALANCE_HIGHLIGHTS_FACTOR",           //24
+        "CC_COLOR_BALANCE_HIGHLIGHTS_HUE",              //25
+        "CC_COLOR_BALANCE_HIGHLIGTHS_SATURATION",       //26
