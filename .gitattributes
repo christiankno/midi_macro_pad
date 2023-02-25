@@ -1,0 +1,2 @@
+*.FlatPrj filter=lfs diff=lfs merge=lfs -text
+**/*.FlatPrj filter=lfs diff=lfs merge=lfs -text

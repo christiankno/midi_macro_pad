@@ -1,0 +1,56 @@
+(Exported by FreeCAD)
+(Post Processor: grbl_post)
+(Output Time:2022-08-23 18:46:20.057592)
+(begin preamble)
+G17 G90
+G21
+(begin operation: T2: Mill Bit standard001)
+(Path: T2: Mill Bit standard001)
+(T2: Mill Bit standard001)
+(begin toolchange)
+; M6 T2
+M3 S12000.0000
+(finish operation: T2: Mill Bit standard001)
+(begin operation: Profile_Edges)
+(Path: Profile_Edges)
+(Profile_Edges)
+(Compensated Tool Path. Diameter: 3.1)
+G0 Z11.0000
+G0 X6.9006 Y4.1315
+G0 Z9.0000
+G1 X6.9006 Y4.1315 Z5.0000 F360.00
+G2 X6.9500 Y3.9239 Z5.0000 I-0.1439 J-0.1439 F360.00
+G1 X6.9500 Y-3.0419 Z5.0000 F360.00
+G2 X6.8183 Y-3.2996 Z5.0000 I-0.2233 J-0.0483 F360.00
+G2 X6.5500 Y-3.0463 Z5.0000 I-0.0669 J0.1979 F360.00
+G1 X6.5500 Y3.9237 Z5.0000 F360.00
+G2 X6.5722 Y4.0738 Z5.0000 I0.3876 J0.0192 F360.00
+G2 X6.9006 Y4.1315 Z5.0000 I0.1844 J-0.0862 F360.00
+G0 Z11.0000
+G0 X-6.6093 Y2.5115
+G0 Z9.0000
+G1 X-6.6093 Y2.5115 Z5.0000 F360.00
+G2 X-6.5600 Y2.3032 Z5.0000 I-0.1441 J-0.1441 F360.00
+G1 X-6.5600 Y-2.2623 Z5.0000 F360.00
+G2 X-6.6908 Y-2.5193 Z5.0000 I-0.2234 J-0.0481 F360.00
+G2 X-6.9600 Y-2.2654 Z5.0000 I-0.0676 J0.1979 F360.00
+G1 X-6.9600 Y2.3045 Z5.0000 F360.00
+G2 X-6.9382 Y2.4531 Z5.0000 I0.3878 J0.0191 F360.00
+G2 X-6.6093 Y2.5115 Z5.0000 I0.1848 J-0.0857 F360.00
+G0 Z11.0000
+(finish operation: Profile_Edges)
+(begin operation: Drilling002)
+(Path: Drilling002)
+(Drilling002)
+(Begin Drilling)
+G0 Z11.0000
+G90
+; G98
+G81 X-0.0000 Y0.0000 Z5.0000 F360.00 R10.0000
+; G80
+G0 Z11.0000
+(finish operation: Drilling002)
+(begin postamble)
+M5
+G17 G90
+; M2

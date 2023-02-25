@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2022-09-11T18:05:59Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "midi_pad_laser_optimized2"
+        },
+        "Owner": "christian knoblich <christian.castro@stud.hs-kempten.de>",
+        "Size": {
+            "X": 166.04,
+            "Y": 149.85
+        }
+    }
+}
